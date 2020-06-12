@@ -114,5 +114,6 @@ body {
 @keyframes paragraph {
   to {
     transform: translateX(0);
+    
   }
 }
