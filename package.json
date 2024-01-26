@@ -1,0 +1,11 @@
+{
+  "name": "hello-docker-learners",
+  "version": "1.0.0",
+  "description": "web page rendered on an nginx server",
+  "author": "folarin oyenuga",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+
