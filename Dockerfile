@@ -19,5 +19,5 @@ WORKDIR /usr/src/app
 RUN npm install
 
 # Specify the command for the container to execute
-CMD ["node", "app.js"]
+CMD ["node", "script.js"]
 
