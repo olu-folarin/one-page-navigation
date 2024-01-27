@@ -1,13 +1,18 @@
-// for a smooth scrolling effect
-$('.btn').on('click', function(event) {
-  if (this.hash !== '') {
-    event.preventDefault();
+// Your previous JavaScript code for handling button clicks
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', function(event) {
     const hash = this.hash;
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800
-    );
-  }
+    if (hash !== '') {
+      event.preventDefault();
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
 });

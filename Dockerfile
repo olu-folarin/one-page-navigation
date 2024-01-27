@@ -3,7 +3,7 @@ FROM node:14-alpine
 
 # Set a label for your image
 LABEL org.opencontainers.image.title="Test Deployment" \
-      org.opencontainers.image.description="Nginx server rendering a simple web page" \
+      org.opencontainers.image.description="Node.js server rendering a simple web page" \
       org.opencontainers.image.authors="folarin oyenuga"
 
 # Create a directory in the container image for your app code
@@ -19,5 +19,4 @@ WORKDIR /usr/src/app
 RUN npm install
 
 # Specify the command for the container to execute
-CMD ["node", "script.js"]
-
+CMD ["node", "server.js"]
